@@ -1,4 +1,4 @@
-/* Importar fonte moderna */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-    color: #4a90e2;
+    color: #f7d774; /* Amarelo mais suave */
     margin-bottom: 20px;
     font-weight: 600;
 }
@@ -32,7 +32,7 @@ h1 {
 hr {
     border: 0;
     height: 1px;
-    background: #4a90e2;
+    background: #f7d774; /* Amarelo mais suave */
     margin: 20px 0;
 }
 
@@ -40,14 +40,14 @@ label {
     display: block;
     margin: 10px 0 5px;
     font-size: 14px;
-    color: #b0b0c3;
+    color: #f7d774; /* Amarelo mais suave */
 }
 
 input[type="number"] {
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #4a90e2;
+    border: 1px solid #f7d774; /* Amarelo mais suave */
     border-radius: 8px;
     background-color: #1e1e2f;
     color: #ffffff;
@@ -57,11 +57,11 @@ input[type="number"] {
 }
 
 input[type="number"]:focus {
-    border-color: #6ab0f3;
+    border-color: #f5c85c; /* Amarelo mais escuro */
 }
 
 button {
-    background: #4a90e2;
+    background: #f7d774; /* Amarelo mais suave */
     color: #ffffff;
     border: none;
     padding: 12px 20px;
@@ -74,7 +74,7 @@ button {
 }
 
 button:hover {
-    background: #6ab0f3;
+    background: #f5c85c; /* Amarelo mais escuro */
     transform: translateY(-2px);
 }
 
@@ -85,6 +85,6 @@ button:active {
 #resultado {
     margin-top: 20px;
     font-size: 18px;
-    color: #ffffff;
+    color: #f7d774; /* Amarelo mais suave */
     font-weight: 600;
 }
