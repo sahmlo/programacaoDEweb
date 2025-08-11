@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark gray for a near-black background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #333333; /* Darker gray for the container */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    text-align: center;
+    width: 300px;
+    outline: 2px solid #ff69b4; /* Hot pink outline */
+    outline-offset: -10px;
+}
+
+input {
+    width: 80%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: 1px solid #555; /* Dark gray border */
+    border-radius: 5px;
+    background-color: #222; /* Dark input background */
+    color: #eee; /* Light text for readability */
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-weight: bold;
+    background-color: #ff1493; /* Deep pink for the button */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c71585; /* Slightly darker pink on hover */
+}
+
+.pode-votar {
+    color: #ff69b4; /* Hot pink */
+    font-weight: bold;
+}
+
+.idade-invalida {
+    color: #ffffff; /* White */
+    font-weight: bold;
+}
+
+.voto-facultativo {
+    color: #ffb6c1; /* Light pink */
+    font-weight: bold;
+}
+
+.nao-pode-votar {
+    color: #ff1a1a; /* Red for emphasis, as a stark contrast */
+    font-weight: bold;
+}
+
+h1 {
+    color: #ffffff; /* White */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    color: #ffffff; /* White */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ff69b4; /* Hot pink */
+}
