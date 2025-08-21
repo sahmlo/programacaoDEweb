@@ -1,13 +1,13 @@
 import './App.css';
 import { useState } from 'react';
+
 function App() {
   // Cria uma variavel e um tetter (forma de adicionar dados) para o usuário.
   const[usuario, setUsuario] = useState('');
-  
-  // Cria uma variavel e um tetter (forma de adicionar dados) para o usuário.
+
   // Inicializa a lista com alguns usuários pré definido.
   const[usuarios, setUsuarios] = useState(["Ana", "Bruno", "Carlos"]);
-// Funçaõ para verificar se o usuário já existe e adiciona o usuário na lista. 
+  // Funçaõ para verificar se o usuário já existe e adiciona o usuário na lista. 
   const adicionarUsuario = () => {
     // Se o usuário existir na lista, exibe um alerta.
     if(usuarios.includes(usuario)){
