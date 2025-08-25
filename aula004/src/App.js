@@ -1,37 +1,31 @@
+import React, { useState } from 'react';
 import './App.css';
-import { useState } from 'react';
+import logo from './assets/images/StevenUniverse.png';
+
+import AdicionarProduto from './components/AdicionarProduto';
+import ListaDeProdutos from './components/ListaDeProduto';
 
 function App() {
-  const [produto, setProduto] = useState ('');
-  const [produtos, setProdutos] = useState (["Computador", "Celular", "Notebook"]);
+  const [produtos, setProdutos] = useState([]);
 
-  const adicionarProduto = () => {
+  const adicionarUsuario = (nome) => {
+    const produto = nome.trim();
+
     if (produtos.includes(produto)) {
-      alert ("Produto já Existe!")
+      alert('O produto já existe!');
       return;
-    }
+    }  
     setProdutos([...produtos, produto]);
-    setProduto('');
-
   };
+
   return (
-<div className="App">
-      <h1>Adicionar Produtos</h1>
-      <input 
-        type="text" 
-        value={produto} 
-        onChange={(e) => setProduto(e.target.value)} 
-        placeholder="Digite o nome do produto"
-      />
-      <button onClick={adicionarProduto}>Adicionar Produto</button>
-      
+    <div className="App">
+      <img src={logo} className="logo" alt="SU" /> 
+      <h1>Steven Universo</h1>
+      <AdicionarProduto onAdd={adicionarUsuario} />
       <hr />
-      <h2>Lista de Produtos</h2>
-      <ul>
-        {produtos.map((user, index) => (
-          <li key={index}>{user}</li>
-        ))}
-      </ul>   
+      <h2>Lista de Personagens</h2>
+      <ListaDeProdutos itens={produtos} />
     </div>
   );
 }
