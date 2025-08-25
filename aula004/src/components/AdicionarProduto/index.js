@@ -1,4 +1,5 @@
 // aula004\src\components\AdicionarProduto\index.js
+
 import React, { useState } from "react";
 import './styles.css';
 
@@ -12,7 +13,7 @@ const AdicionarProduto = ({ onAdd }) => {
             setTexto('');
         }
     };
-
+    
     return (
         <form className="form" onSubmit={enviar}>
             <input
