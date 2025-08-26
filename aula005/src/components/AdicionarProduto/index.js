@@ -1,5 +1,4 @@
 // aula004\src\components\AdicionarProduto\index.js
-
 import React, { useState } from "react";
 import './styles.css';
 
@@ -26,5 +25,6 @@ const AdicionarProduto = ({ onAdd }) => {
         </form>
     );
 }
+
 
 export default AdicionarProduto;
