@@ -1,0 +1,18 @@
+/* projeto-vite\src\components\InfoAluno\styles.css */
+
+.info-aluno {
+  border: 1px solid #cccccc;
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+.info-aluno h2 {
+  margin-bottom: 12px;
+  color: #003bfe;
+}
+.info-aluno p {
+  margin: 4px 0;
+  color: #000000;
+}

@@ -1,0 +1,19 @@
+/* projeto-vite\src\components\Mensagem\style.css */
+.mensagem {
+  border: 1px solid #cccccc;
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+
+.mensagem h2 {
+  margin-bottom: 12px;
+  color: #003bfe;
+}
+
+.mensagem p {
+  margin: 4px 0;
+  color: #000000;
+}
