@@ -1,0 +1,19 @@
+/* src\componets\AdicionarEstudantes\styles.css */
+
+.adicionar-estudante-form input {
+  padding: 12px;
+  border: 2px solid #ffb88c;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #fff8f3;
+  color: #ff7e5f;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+  margin-bottom: 8px;
+}
+
+.adicionar-estudante-form input:focus {
+  border-color: #ff7e5f;
+  box-shadow: 0 0 0 2px #ffe0d3;
+  background: #fff3e6;
+}
