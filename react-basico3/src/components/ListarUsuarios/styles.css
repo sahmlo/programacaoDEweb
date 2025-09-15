@@ -1,0 +1,38 @@
+/* react-basico3\src\components\ListarUsuarios\styles.css */
+
+.listar-usuarios {
+  background: linear-gradient(135deg, #0d1b2a 60%, #1b263b 100%);
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.listar-usuarios h2 {
+  margin-bottom: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.listar-usuarios ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listar-usuarios li {
+  background: #1b263b;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  padding: 12px;
+  transition: box-shadow 0.2s;
+}
+
+.listar-usuarios li:hover {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+.listar-usuarios strong {
+  color: #00aaff;
+}

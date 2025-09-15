@@ -1,0 +1,85 @@
+/* react-basico3\src\components\CadastrarUsuario\styles.css */
+/* Estilo inspirado em tela de cadastro corporativa */
+
+.cadastrar-usuario {
+	max-width: 400px;
+	margin: 40px auto;
+	padding: 32px 28px;
+	background: linear-gradient(135deg, #0d1b2a 70%, #1976d2 100%);
+	border-radius: 12px;
+	box-shadow: 0 4px 24px rgba(25, 118, 210, 0.18);
+	font-family: 'Segoe UI', Arial, sans-serif;
+	color: #e3eafc;
+}
+
+.cadastrar-usuario h2 {
+	text-align: center;
+	color: #90caf9;
+	margin-bottom: 24px;
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.cadastrar-usuario form {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+/* Garante que o texto fique visível */
+.cadastrar-usuario,
+.cadastrar-usuario label,
+.cadastrar-usuario input,
+.cadastrar-usuario button {
+	color: #ffffff !important;
+}
+
+.cadastrar-usuario input {
+	padding: 12px 14px;
+	border: 1px solid #1976d2;
+	border-radius: 6px;
+	font-size: 1rem;
+	background: #1b263b;
+	color: #e3eafc;
+	transition: border-color 0.2s, background 0.2s;
+}
+
+.cadastrar-usuario input:focus {
+	border-color: #90caf9;
+	outline: none;
+	background: #283c53;
+}
+
+.cadastrar-usuario button {
+	padding: 12px;
+	background: linear-gradient(90deg, #1976d2 60%, #0d1b2a 100%);
+	color: #e3eafc;
+	border: none;
+	border-radius: 6px;
+	font-size: 1.1rem;
+	font-weight: 500;
+	cursor: pointer;
+	box-shadow: 0 2px 8px rgba(25, 118, 210, 0.18);
+	transition: background 0.2s;
+}
+
+.cadastrar-usuario button:hover {
+	background: linear-gradient(90deg, #0d1b2a 60%, #1976d2 100%);
+}
+
+
+.cadastrar-usuario input[type="int"]::-webkit-input-placeholder,
+.cadastrar-usuario input[type="text"]::-webkit-input-placeholder,
+.cadastrar-usuario input[type="email"]::-webkit-input-placeholder {
+	color: #90caf9;
+	opacity: 1;
+}
+
+.cadastrar-usuario input[type="int"]::placeholder,
+.cadastrar-usuario input[type="text"]::placeholder,
+.cadastrar-usuario input[type="email"]::placeholder {
+	color: #90caf9;
+	opacity: 1;
+}
+/* react-basico3\src\components\CadastrarUsuario\styles.css */
