@@ -1,37 +1,42 @@
-// react-intermedio\src\pages\FaleConosco\index.jsx
+// react-intermedio/src/pages/FaleConosco/index.jsx
 
 import './styles.css'
 
 function FaleConosco() {
-    function handleSubmit(even) {
-        even.preventDefault();
+    function handleSubmit(event) {
+        event.preventDefault();
         alert('Mensagem enviada com sucesso!');
     }
     return (
         <section className="fale">
             <h1>Fale Conosco</h1>
-            <p>Tire suas dúvidas em um canal de Youtube muito bom e que ainda faz v</p>
+            <p>
+                Acredito que todo contato é uma oportunidade de aprendizado. Seja para trocar
+                experiências, compartilhar ideias ou iniciar uma parceria, sua mensagem será
+                muito importante para mim. Vamos construir soluções e evoluir juntos!
+            </p>
+
             <form className='form' onSubmit={handleSubmit}>
                 <div className='grid cols-3'>
                     <label className='field'>
-                        <spam>Nome: </spam>
+                        <span>Nome: </span>
                         <input type="text" placeholder="Seu nome" required />
                     </label>
                     <label className='field'>
-                        <spam>E-mail: </spam>
-                        <input type="text" placeholder="Seu e-mail" required />
+                        <span>E-mail: </span>
+                        <input type="email" placeholder="Seu e-mail" required />
                     </label>
                     <label className='field'>
-                        <spam>Telefone: </spam>
-                        <input type="text" placeholder="Seu Telefone" required />
+                        <span>Telefone: </span>
+                        <input type="tel" placeholder="Seu Telefone" required />
                     </label>
                     <label className='field'>
-                        <spam>Assunto: </spam>
+                        <span>Assunto: </span>
                         <input type="text" placeholder="Assunto" required />
                     </label>
                     <label className='field'>
-                        <spam>Mensagem: </spam>
-                        <input type="text" placeholder="Escreva sua mensagem aqui..." required />
+                        <span>Mensagem: </span>
+                        <textarea placeholder="Escreva sua mensagem aqui..." required />
                     </label>
                     <button className='btn primary' type="submit">Enviar</button>
                 </div>

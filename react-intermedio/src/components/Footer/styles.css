@@ -1,1 +1,26 @@
-/* react-intermedio\src\components\Footer\styles.css */
+/* programacaoDEweb\react-intermedio\src\components\Footer\styles.css */
+
+/* Estilos modernos para o Footer: preto e lilás */
+.footer {
+  background: #1a1a2e;
+  color: #c77dff;
+  padding: 24px 0 12px 0;
+  text-align: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 -2px 8px rgba(108,46,182,0.08);
+}
+.footer__wrap {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #c77dff;
+}
+.footer strong {
+  color: #c77dff;
+}
+.footer .copyright {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #a18aff;
+}

@@ -1,1 +1,37 @@
-/* react-intermedio\src\pages\SobreNos\styles.css */
+/* programacaoDEweb\react-intermedio\src\pages\SobreNos\styles.css */
+/* Estilos para a página Sobre Nós */
+/* Estilos modernos para a página Sobre Nós: fundo preto e lilás */
+/* Bloco Sobre sem borda, apenas box-shadow suave */
+.sobre {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #1a1a2e;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(108,46,182,0.12);
+  padding: 36px 28px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #c77dff;
+}
+.sobre h1 {
+  color: #c77dff;
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+}
+.sobre p {
+  color: #a18aff;
+  font-size: 1.15rem;
+  margin-bottom: 18px;
+}
+.sobre ul {
+  margin-top: 24px;
+  padding-left: 18px;
+}
+.sobre li {
+  font-size: 1.08rem;
+  color: #c77dff;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.sobre strong {
+  color: #6c2eb6;
+}

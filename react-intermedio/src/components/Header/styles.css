@@ -1,2 +1,69 @@
-/* react-intermedio\src\components\Header\styles.css */
+/* programacaoDEweb\react-intermedio\src\components\Header\styles.css */
 
+/* Estilos modernos para o Header: preto e lilás */
+.header {
+  background: #22222200;
+  color: #c77dff;
+  padding: 18px 0 12px 0;
+  box-shadow: 0 2px 8px rgba(108,46,182,0.12);
+}
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 16px;
+  gap: 18px;
+}
+.brand {
+  text-decoration: none;
+  color: #c77dff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 16px;
+}
+.header-title {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+.header-logo {
+  order: -1;
+  height: 48px;
+  margin: 0 18px 0 0;
+}
+.nav {
+  display: flex;
+  gap: 18px;
+}
+.link {
+  color: #c77dff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+.link:hover {
+  background: #6c2eb6;
+  color: #fff;
+}
+.link.active {
+  background: #c77dff;
+  color: #222;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  .header__wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .header-logo {
+    height: 36px;
+    margin: 8px 0;
+  }
+  .nav {
+    gap: 10px;
+  }
+}
