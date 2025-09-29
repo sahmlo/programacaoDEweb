@@ -1,76 +1,104 @@
-/* programacaoDEweb\react-intermedio\src\pages\FaleConosco\styles.css */
-
-/* Estilos modernos para a página Fale Conosco: fundo preto e lilás */
+/* Fale Conosco moderno preto e lilás */
 .fale {
-  max-width: 700px;
-  margin: 32px auto;
-  background: #222;
-  border-radius: 10px;
-  box-shadow: 0 2px 16px rgba(108,46,182,0.12);
-  padding: 32px 24px;
-  color: #c77dff;
-  font-family: 'Segoe UI', Arial, sans-serif;
+	background: linear-gradient(135deg, #1a1a2e 60%, #6c2eb6 100%);
+	min-height: 100vh;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	color: #c77dff;
+	padding: 48px 0 32px 0;
+	box-sizing: border-box;
 }
 .fale h1 {
-  color: #c77dff;
-  font-size: 2rem;
-  margin-bottom: 12px;
+	font-size: 2.2rem;
+	font-weight: bold;
+	margin-bottom: 18px;
+	color: #c77dff;
+	text-align: center;
 }
 .fale p {
-  color: #a18aff;
-  margin-bottom: 24px;
-  font-size: 1.1rem;
+	font-size: 1.15rem;
+	margin-bottom: 32px;
+	color: #a18aff;
+	text-align: center;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .form {
-  width: 100%;
+	background: #1a1a2e;
+	border-radius: 14px;
+	box-shadow: 0 2px 16px rgba(108,46,182,0.15);
+	padding: 32px 24px;
+	max-width: 700px;
+	margin: 0 auto;
 }
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-@media (max-width: 800px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
+	display: flex;
+	flex-wrap: wrap;
+	gap: 22px;
+	justify-content: center;
 }
 .field {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 220px;
+	min-width: 180px;
+	max-width: 320px;
+	margin-bottom: 0;
 }
 .field span {
-  font-weight: 500;
-  color: #c77dff;
+	color: #c77dff;
+	font-weight: 500;
+	margin-bottom: 6px;
 }
-input, textarea {
-  padding: 8px 10px;
-  border: 1px solid #c77dff;
-  border-radius: 5px;
-  font-size: 1rem;
-  background: #1a1a2e;
-  color: #fff;
-  resize: vertical;
-  transition: border 0.2s;
+.field input,
+.field textarea {
+	background: #22223b;
+	color: #c77dff;
+	border: 1.5px solid #6c2eb6;
+	border-radius: 7px;
+	padding: 10px 12px;
+	font-size: 1rem;
+	margin-bottom: 2px;
+	transition: border 0.2s, box-shadow 0.2s;
+	outline: none;
 }
-input:focus, textarea:focus {
-  border-color: #6c2eb6;
-  outline: none;
+.field input:focus,
+.field textarea:focus {
+	border-color: #c77dff;
+	box-shadow: 0 0 0 2px rgba(199,125,255,0.15);
+}
+.field textarea {
+	min-height: 80px;
+	resize: vertical;
 }
 .btn.primary {
-  grid-column: 1 / -1;
-  background: #6c2eb6;
-  color: #fff;
-  border: none;
-  padding: 12px 0;
-  border-radius: 6px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: background 0.2s, color 0.2s;
+	background: #6c2eb6;
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	padding: 12px 28px;
+	font-size: 1.1rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background 0.2s, color 0.2s;
+	margin-top: 12px;
+	align-self: flex-end;
 }
 .btn.primary:hover {
-  background: #c77dff;
-  color: #222;
+	background: #c77dff;
+	color: #222;
 }
+@media (max-width: 800px) {
+	.form {
+		padding: 18px 8px;
+	}
+	.grid {
+		gap: 12px;
+	}
+	.field {
+		min-width: 140px;
+		max-width: 100%;
+	}
+}
+/* programacaoDEweb\react-intermedio\src\pages\FaleConosco\styles.css */
+
