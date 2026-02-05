@@ -1,11 +1,27 @@
-Este repositório concentra os projetos e exercícios práticos desenvolvidos durante o módulo de Programação Web do curso de Data Science. O objetivo foi dominar as tecnologias base da internet para criar interfaces responsivas e funcionais.
+# 🌐 Programação Web | Desenvolvimento de Sistemas
 
-Tecnologias e Conceitos Abordados:
+Este repositório reúne os exercícios práticos e projetos desenvolvidos no módulo de **Programação Web** do curso técnico de Desenvolvimento de Sistemas.
 
-    HTML5: Estruturação semântica de conteúdo.
+O objetivo foi dominar a camada de apresentação (**Front-end**) das aplicações, aprendendo a criar interfaces responsivas, semânticas e interativas para usuários finais.
 
-    CSS3: Estilização, layout e design responsivo.
+## 🛠️ Tecnologias Utilizadas
 
-    JavaScript: Lógica de programação, manipulação de eventos e interatividade no navegador.
+* **HTML5:** Estruturação semântica e esqueleto das aplicações.
+* **CSS3:** Estilização, Design Responsivo e layout (Flexbox/Grid).
+* **JavaScript:** Interatividade no lado do cliente (Client-side) e manipulação do DOM.
 
-    Integração: Conexão entre estrutura e lógica para aplicações web leves.
+## 🎯 Objetivo no Curso
+
+No contexto de Desenvolvimento de Sistemas, este módulo é a base para se tornar um desenvolvedor **Full Stack**, permitindo:
+1.  **Criação de Interfaces:** Construir telas de cadastro, dashboards administrativos e páginas de aterrissagem (Landing Pages).
+2.  **Experiência do Usuário (UX/UI):** Entender como entregar um software funcional e agradável visualmente.
+3.  **Integração:** Preparar o terreno para conectar essas telas com o Back-end (banco de dados e servidores) no futuro.
+
+## 🚀 Como executar
+
+1.  Clone este repositório: `git clone https://github.com/sahmlo/programacaoDEweb.git`
+2.  Navegue até a pasta do projeto.
+3.  Abra o arquivo `index.html` no seu navegador.
+
+---
+Desenvolvido por **Sara Melo**
