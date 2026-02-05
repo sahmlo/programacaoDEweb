@@ -1,0 +1,112 @@
+/* Cores da Farmácia Popular */
+:root {
+  --fp-verde: #009739;
+  --fp-vermelho: #d62828;
+  --fp-branco: #ffffff;
+  --fp-cinza-claro: #f5f5f5;
+  --fp-cinza-neutro: #d3d3d3;
+  --fp-texto-escuro: #1a1a1a;
+}
+
+/* Base */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--fp-texto-escuro);
+  background: var(--fp-cinza-claro);
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main.container {
+  width: min(1100px, 92%);
+  margin: 24px auto;
+}
+
+/* Botões */
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+/* Botão principal (vermelho) */
+.btn.primary {
+  background: var(--fp-vermelho);
+  color: var(--fp-branco);
+}
+
+.btn.primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(214, 40, 40, .25);
+}
+
+/* Botão secundário (verde) */
+.btn.secondary {
+  background: var(--fp-verde);
+  color: var(--fp-branco);
+}
+
+.btn.secondary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0, 151, 57, .25);
+}
+
+/* Layout e Cards */
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.grid.cols-3 {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: var(--fp-branco);
+  border: 1px solid var(--fp-cinza-neutro);
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .03);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--fp-verde);
+}
+
+/* Textos */
+h1, h2, h3 {
+  color: var(--fp-verde);
+}
+
+p {
+  color: var(--fp-texto-escuro);
+  line-height: 1.6;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  main.container {
+    width: 95%;
+    margin: 16px auto;
+  }
+}

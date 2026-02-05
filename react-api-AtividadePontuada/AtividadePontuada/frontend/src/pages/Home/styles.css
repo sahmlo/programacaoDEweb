@@ -1,0 +1,169 @@
+/* AtividadePontuada\frontend\src\pages\Home\styles.css */
+
+/* 🎨 Paleta inspirada na Farmácia Popular */
+:root {
+  --fp-verde: #009739;         /* Cor principal: verde saúde */
+  --fp-vermelho: #d62828;      /* Cor de destaque (logo Farmácia Popular) */
+  --fp-amarelo: #ffcc00;       /* Cor de apoio (energia e visibilidade) */
+  --fp-cinza-claro: #f7f7f7;   /* Fundo suave */
+  --fp-cinza-texto: #555;      /* Texto secundário */
+}
+
+.home {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 24px;
+  background: var(--fp-cinza-claro);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.hero__text h1 {
+  font-size: clamp(28px, 4vw, 44px);
+  margin: 0 0 10px;
+  color: var(--fp-verde);
+  font-weight: 700;
+}
+
+.hero__text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--fp-cinza-texto);
+}
+
+.hero__cta {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background-color: var(--fp-vermelho);
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #b71d1d;
+}
+
+.btn {
+  background-color: var(--fp-verde);
+  color: white;
+}
+
+.btn:hover {
+  background-color: #007a2d;
+}
+
+.hero__image img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+}
+
+/* FEATURES */
+.features {
+  text-align: center;
+  margin-top: 48px;
+  padding: 24px;
+  background: white;
+  border-radius: 16px;
+}
+
+.features h2 {
+  margin: 0 0 24px;
+  color: var(--fp-verde);
+}
+
+.grid.cols-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--fp-cinza-claro);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-top: 5px solid transparent;
+  transition: border-color 0.3s ease, transform 0.2s ease;
+  text-align: left;
+}
+
+.card:hover {
+  border-color: var(--fp-vermelho);
+  transform: translateY(-3px);
+}
+
+.card h3 {
+  color: var(--fp-verde);
+  margin: 0 0 8px;
+}
+
+.card p {
+  color: var(--fp-cinza-texto);
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+/* SOCIAL PROOF */
+.socialProof {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 24px;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.socialProof__image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.socialProof__text h2 {
+  margin: 0 0 8px;
+  color: var(--fp-verde);
+}
+
+.socialProof__text p {
+  color: var(--fp-cinza-texto);
+  line-height: 1.6;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .hero, .socialProof {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    text-align: center;
+  }
+  .hero__cta {
+    justify-content: center;
+  }
+}
